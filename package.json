@@ -4,11 +4,14 @@
   "description": "playground",
   "main": "main.js",
   "dependencies": {
-    "mongoose": "^3.8.17",
+    "cors": "^2.4.2",
     "express": "^4.9.7",
-    "cors": "^2.4.2"
+    "mongoose": "^3.8.17",
+    "underscore": "^1.7.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^1.21.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
