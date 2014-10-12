@@ -1,0 +1,29 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "playground",
+  "main": "main.js",
+  "dependencies": {
+    "mongoose": "^3.8.17",
+    "express": "^4.9.7",
+    "cors": "^2.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lancempoe/nodeJsPlayground.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Lance Poehler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lancempoe/nodeJsPlayground/issues"
+  },
+  "homepage": "https://github.com/lancempoe/nodeJsPlayground"
+}
