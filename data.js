@@ -1,3 +1,3 @@
-[{"firstName":"Amal", "lastName":"Benson", "email":"lpoehler@jamasoftware.com"},
- {"firstName":"Steel", "lastName":"Benson", "email":"you@jamasoftware.com"},
- {"firstName":"Lance", "lastName":"Poehler", "email":"beckypoehler@jamasoftware.com"}]
+[{"firstName":"Dr", "lastName":"Who", "email":"DrWho@jamasoftware.com"},
+ {"firstName":"Mur", "lastName":"Der", "email":"redrum@jamasoftware.com"},
+ {"firstName":"Weeping", "lastName":"Angles", "email":"weepingAngles@jamasoftware.com"}]
