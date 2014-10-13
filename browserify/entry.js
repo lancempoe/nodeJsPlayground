@@ -5,4 +5,4 @@ var uppers = _.map(dep, function (str) {
     return str.toUpperCase();
 })
 
-console.log(uppers); 
+console.log(uppers);
