@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lancempoe/nodeJsPlayground/issues"
   },
-  "homepage": "https://github.com/lancempoe/nodeJsPlayground"
+  "homepage": "https://github.com/lancempoe/nodeJsPlayground",
+  "dependencies": {
+    "underscore": "^1.7.0"
+  }
 }
