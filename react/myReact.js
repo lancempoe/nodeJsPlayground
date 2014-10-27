@@ -18,14 +18,27 @@ var APP = React.createClass({
         this.setState({txt:e.target.value})
     },
     render:function() {
-//        console.log(this.props.txt)
-//        console.log(this.props.cat)
         return (
             <div>
-                <input type="text" onChange={this.updateState}/>
-                <h1>{this.state.txt}</h1>
+                <Widget txt={this.state.txt} update={this.updateState} />
+                <Widget txt={this.state.txt} update={this.updateState} />
+                <Widget txt={this.state.txt} update={this.updateState} />
+                <Widget txt={this.state.txt} update={this.updateState} />
+                <Widget txt={this.state.txt} update={this.updateState} />
+                <Widget txt={this.state.txt} update={this.updateState} />
             </div>
-            )
+        )
+    }
+});
+
+var Widget = React.createClass({
+    render:function() {
+        return (
+            <div>
+                <input type="text" onChange={this.props.update}/>
+                <h1>{this.props.txt}</h1>
+            </div>
+        )
     }
 });
 
