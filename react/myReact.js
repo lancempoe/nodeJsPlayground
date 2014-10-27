@@ -12,7 +12,20 @@ var APP = React.createClass({
 
     },
     getInitialState:function() {
-        return{txt:'', id:0}
+        return{
+            txt:'',
+            id:0,
+            red:128,
+            green:128,
+            blue:128
+        }
+    },
+    updateColor:function(e){
+        this.setState({
+            red:this.refs.red.refs.range.getDOMNode().value,
+            green:this.refs.green.refs.range.getDOMNode().value,
+            blue:this.refs.blue.refs.range.getDOMNode().value
+        })
     },
     updateState:function(e) {
         this.setState({txt:e.target.value})
@@ -20,12 +33,24 @@ var APP = React.createClass({
     render:function() {
         return (
             <div>
-                <Widget txt={this.state.txt} update={this.updateState} />
-                <Widget txt={this.state.txt} update={this.updateState} />
-                <Widget txt={this.state.txt} update={this.updateState} />
-                <Widget txt={this.state.txt} update={this.updateState} />
-                <Widget txt={this.state.txt} update={this.updateState} />
-                <Widget txt={this.state.txt} update={this.updateState} />
+                {this.state.txt}
+                <hr/>
+                <ColorWidget ref="red" update={this.updateColor} />
+                <label>{this.state.red}</label>
+                <ColorWidget ref="green" update={this.updateColor} />
+                <label>{this.state.green}</label>
+                <ColorWidget ref="blue" update={this.updateColor} />
+                <label>{this.state.blue}</label>
+            </div>
+        )
+    }
+});
+
+var ColorWidget = React.createClass({
+    render:function() {
+        return (
+            <div>
+                <input ref="range" type="range" min="0" max="255" onChange={this.props.update}/>
             </div>
         )
     }
