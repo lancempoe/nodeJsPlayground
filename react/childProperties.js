@@ -3,7 +3,16 @@ var APP =
         React.createClass({
         render:function(){
             return (
-                <BButton>I <BHeart/> React</BButton>
+                <div>
+                    <BButton href="javascript:alert('hello')" className="btn-primary">
+                        <BHeart className="glyphicon-heart"/> Button</BButton>
+                    <BButton href="javascript:alert('hello')" className="btn-success">
+                        <BHeart className="glyphicon-pencil"/> Button</BButton>
+                    <BButton href="javascript:alert('hello')" className="btn-danger">
+                        <BHeart className="glyphicon-inbox"/> Button</BButton>
+                    <BButton href="javascript:alert('hello')" className="btn-danger">
+                        <BHeart className="glyphicon-euro"/> Button</BButton>
+                </div>
             )
         }
     });
@@ -11,14 +20,14 @@ var APP =
 var BButton =
     React.createClass({
         render:function() {
-            return <a className="btn btn-primary">{this.props.children}</a>
+            return this.transferPropsTo(<a className="btn">{this.props.children}</a>)
         }
     });
 
 var BHeart =
     React.createClass({
         render:function() {
-            return <span className="glyphicon glyphicon-heart"></span>
+            return this.transferPropsTo(<span className="glyphicon"></span>)
         }
     });
 
